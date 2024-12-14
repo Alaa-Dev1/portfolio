@@ -174,9 +174,8 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap; /* Allow items to wrap to multiple lines */
     gap: 20px; /* Space between skills */
-    flex-wrap: nowrap; /* Prevents wrapping to the next line */
-    overflow-x: auto; /* Adds horizontal scrolling for smaller screens */
     padding: 10px;
 }
 
@@ -185,7 +184,7 @@ footer {
     border: 1px solid #ddd;
     border-radius: 10px;
     padding: 20px;
-    width: 120px;
+    width: 120px; /* Control the width of each skill box */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -208,5 +207,4 @@ footer {
     color: #333;
     margin: 0;
 }
-
 
