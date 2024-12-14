@@ -1,9 +1,14 @@
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
 }
 
+/* Header Styles */
 header {
     background-color: #333;
     color: #fff;
@@ -15,36 +20,145 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 nav ul li {
-    margin: 0;
+    margin: 0 15px;
 }
 
 nav ul li a {
-    color: #fff;
     text-decoration: none;
+    color: #fff;
+    font-size: 1.1rem;
 }
 
+nav ul li a:hover {
+    color: #f4b400;
+}
+
+/* Section Styles */
 section {
-    padding: 20px;
-}
-
-h1, h2 {
+    padding: 60px 20px;
     text-align: center;
+    margin: 0 auto;
+    max-width: 900px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-img {
-    display: block;
-    margin: 0 auto;
+section#home {
+    background-color: #f4b400;
+    color: #fff;
+    padding: 80px 20px;
+    margin-bottom: 0;
+}
+
+section#home h1 {
+    font-size: 2.5rem;
+    margin: 20px 0;
+}
+
+section#home p {
+    font-size: 1.2rem;
+}
+
+section#home img {
     width: 150px;
     border-radius: 50%;
+    margin-top: 20px;
 }
 
+/* About Me Section */
+section#about h2 {
+    font-size: 2rem;
+    color: #444;
+}
+
+/* Projects Section */
+section#projects ul {
+    list-style: none;
+    padding: 0;
+}
+
+section#projects li {
+    margin: 20px 0;
+    text-align: left;
+}
+
+section#projects a {
+    text-decoration: none;
+    color: #f4b400;
+    font-weight: bold;
+}
+
+section#projects a:hover {
+    text-decoration: underline;
+}
+
+/* Skills Section */
+section#skills ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+}
+
+section#skills li {
+    margin: 10px 15px;
+    padding: 10px 20px;
+    background: #f4b400;
+    color: #fff;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+/* Contact Section */
 form {
     max-width: 400px;
     margin: 0 auto;
-    display: flex;
-    flex-direction: column;
+    text-align: left;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    background: #f4b400;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form button:hover {
+    background: #e19b00;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #333;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
